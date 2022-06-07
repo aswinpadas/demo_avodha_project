@@ -19,5 +19,5 @@ from  demo_avodha_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('demo_avodha_app/urls'))
+    path('',include('demo_avodha_app.urls'))
 ]
