@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop/Add product</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .button {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+        .button2 {
+          background-color: white;
+          color: black;
+          border: 2px solid #008CBA;
+        }
+        body {
+            background-color: #ebeded;
+
+        }
+    </style>
+</head>
+<body style="">
+        <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+
+        Shop
+      </a>
+    </nav>
+    <form method="post" enctype="multipart/form-data" id="form_add_product">
+        {% csrf_token %}
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Product name</label>
+        <input type="text" class="form-control" name="poduct_name" id="exampleFormControlInput1" placeholder=" ">
+      </div>
+        <hr>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Product Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" name="product_desc" rows="3" ></textarea>
+      </div>
+        <hr>
+
+         <div class="form-group">
+        <label for="exampleFormControlInput1">Product Price</label>
+        <input type="number" class="form-control" name="poduct_price" id="exampleFormControlInput2" placeholder=" ">
+      </div>
+        <hr>
+
+        <div class="form-group">
+        <label for="exampleFormControlInput1">Product Price</label>
+        <input type="file" class="form-control" name="poduct_img" id="exampleFormControlInput4" placeholder=" ">
+      </div>
+        <hr>
+        <div>
+            <input type="submit" class ="button button1" name="poduct_submit" form="form_add_product"  >
+        </div>
+    </form>
+
+
+</body>
+</html>
