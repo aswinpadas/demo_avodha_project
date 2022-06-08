@@ -36,29 +36,26 @@
         Shop
       </a>
     </nav>
-    <form method="post" enctype="multipart/form-data" id="form_add_product">
+        <hr>
+    <form style=" width: 50vw; margin-left : 25vw;" method="post" enctype="multipart/form-data" id="form_add_product">
         {% csrf_token %}
       <div class="form-group">
-        <label for="exampleFormControlInput1">Product name</label>
-        <input type="text" class="form-control" name="poduct_name" id="exampleFormControlInput1" placeholder=" ">
+          <label for="exampleFormControlInput1"><h6>Product name</h6></label>
+        <input type="text" class="form-control" name="product_name" id="exampleFormControlInput1" placeholder=" ">
       </div>
-        <hr>
 
       <div class="form-group">
-        <label for="exampleFormControlTextarea1">Product Description</label>
+          <label for="exampleFormControlTextarea1"><h6>Product Description</h6></label>
         <textarea class="form-control" id="exampleFormControlTextarea1" name="product_desc" rows="3" ></textarea>
       </div>
-        <hr>
 
          <div class="form-group">
-        <label for="exampleFormControlInput1">Product Price</label>
-        <input type="number" class="form-control" name="poduct_price" id="exampleFormControlInput2" placeholder=" ">
+             <label for="exampleFormControlInput1"><h6>Product Price</h6></label>
+        <input style=" width: 15vw;"type="number" class="form-control" name="product_price" id="exampleFormControlInput2" placeholder=" ">
       </div>
-        <hr>
-
         <div class="form-group">
-        <label for="exampleFormControlInput1">Product Price</label>
-        <input type="file" class="form-control" name="poduct_img" id="exampleFormControlInput4" placeholder=" ">
+            <label for="exampleFormControlInput1"><h6>Product Image </h6></label>
+        <input type="file" class="form-control" name="product_img" id="exampleFormControlInput4" placeholder=" ">
       </div>
         <hr>
         <div>
